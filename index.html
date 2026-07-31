@@ -3,28 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body>
-        <header>
-             <div class="block-nav__header">
-                <button class="block-nav__button" ...>   <!--Кнопка (слева) -->
-                <img src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/Group.svg" alt="Логотип">        <!-- Логотип -->
-            </div>
-            </header>
-            <main>
-                <h2 class="block-nav__title">Услуги и сервис</h2>    <!--Заголовок -->
-                  <p> Ремонтируемые устройства дополнительные устройства цены на услуги Адреса </p>
 
-                 
+    <title>CPS</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <section> 
-                <p> Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. </p>
+<body>
 
-<img src="<img src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/expand.svg" alt="элемент">        <!-- элемент -->
-        
-<img class="block-picture" 
-     src="https://raw.githubusercontent.com/evg086/--------------------/master/logo.jpeg" 
-     alt="Логотип">
-                </section>
-                 </main>
-                 </body>
+<header class="header">
+
+    <!-- Бургер -->
+    <button
+        class="header__button burger"
+        type="button"
+        aria-label="Открыть меню">
+
+        <span class="burger__icon">
+            <span class="burger__line burger__line--top"></span>
+            <span class="burger__line burger__line--middle"></span>
+            <span class="burger__line burger__line--bottom"></span>
+        </span>
+
+    </button>
+
+    <!-- Разделитель после бургера для планшета -->
+    <span class="header__divider header__divider--left"></span>
+
+    <!-- Логотип -->
+    <img
+        class="header__logo"
+        src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/Group.svg"
+        alt="Логотип CPS">
+
+    <!-- Дополнительные кнопки для планшета -->
+    <div class="header__contacts">
+
+        <!-- Телефон -->
+        <button
+            class="header__button"
+            type="button"
+            aria-label="Позвонить">
+
+            <img
+                class="header__icon"
+                src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/phone.svg"
+                alt="">
+
+        </button>
+
+        <!-- Сообщение -->
+        <button
+            class="header__button"
+            type="button"
+            aria-label="Написать сообщение">
+
+            <img
+                class="header__icon"
+                src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/message.svg"
+                alt="">
+
+        </button>
+
+        <!-- Профиль -->
+        <button
+            class="header__button"
+            type="button"
+            aria-label="Профиль">
+
+            <img
+                class="header__icon"
+                src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/Group%202.svg"
+                alt="">
+
+        </button>
+
+    </div>
+
+    <!-- Разделитель перед кнопками ремонта -->
+    <span class="header__divider header__divider--right"></span>
+
+    <!-- Ремонт -->
+    <button
+        class="header__button"
+        type="button"
+        aria-label="Оставить заявку на ремонт">
+
+        <img
+            class="header__icon"
+            src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/keys.svg"
+            alt="">
+
+    </button>
+
+    <!-- Поиск -->
+    <button
+        class="header__button"
+        type="button"
+        aria-label="Проверить статус ремонта">
+
+        <img
+            class="header__icon"
+            src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/Check%20repair%20status.svg"
+            alt="">
+
+    </button>
+
+</header>
+
+<main class="main">
+
+    <div class="title-row">
+
+        <h1 class="page-title">
+            <span class="side"></span>
+            Услуги и сервисы
+        </h1>
+
+        <!-- Кнопки для версии ПК -->
+        <div class="desktop-actions">
+
+            <button class="desktop-actions__button" type="button">
+                <span>Оставить заявку</span>
+
+                <span class="header__button">
+                    <img
+                        class="header__icon"
+                        src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/keys.svg"
+                        alt="">
+                </span>
+            </button>
+
+            <button class="desktop-actions__button" type="button">
+                <span>Статус ремонта</span>
+
+                <span class="header__button">
+                    <img
+                        class="header__icon"
+                        src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/icon.svg"
+                        alt="">
+                </span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <nav class="services">
+
+        <a
+            class="services__link services__link--active"
+            href="#">
+            Ремонтируемые устройства
+        </a>
+
+        <a class="services__link" href="#">
+            Дополнительные услуги
+        </a>
+
+        <a class="services__link" href="#">
+            Цены на услуги
+        </a>
+
+        <a class="services__link" href="#">
+            Адреса сервисных центров
+        </a>
+
+        <a class="services__link" href="#">
+            Специальные цены
+        </a>
+
+        <a class="services__link" href="#">
+            Отзывы
+        </a>
+
+    </nav>
+
+    <section class="about">
+
+        <div class="about__content">
+
+            <p class="about__text">
+                Мы являемся авторизованным сервисным центром по ремонту
+                техники Dell. Только у нас вы можете отремонтировать свой
+                ноутбук Dell с официальной гарантией производителя.
+            </p>
+
+            <p class="about__text about__text--hidden">
+                Мы успешно работаем с 1992 года и заслужили репутацию
+                надежного партнера.
+            </p>
+
+            <button class="read-more" type="button">
+
+                <img
+                    class="read-more__icon"
+                    src="https://raw.githubusercontent.com/evg086/--------------------/refs/heads/master/expand.svg"
+                    alt="">
+
+                <span>Читать далее</span>
+
+            </button>
+
+        </div>
+
+        <img
+            class="about__image"
+            src="https://github.com/evg086/--------------------/blob/master/Picture%20Copy.jpg?raw=true"
+            alt="Сервисный центр">
+
+    </section>
+
+</main>
+
+</body>
+</html>
